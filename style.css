@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #4f546c;
+  background-color: #eef1f6;
+}
+
+.wrapper {
+  max-width: 35rem;
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 0.2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#entry {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+#entry__input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.2rem;
+  border: 1px solid #c7ccdb;
+  background-color: white;
+  flex: 2;
+  transition: border 200ms ease-in;
+}
+#entry__input:hover {
+  border: 1px solid #2f10f0;
+}
+#entry__input:focus {
+  border: 1px solid #2f10f0;
+  box-shadow: 0px 0px 10px 2px #c5cbfd;
+  outline: none;
+}
+#entry__input:placeholder {
+  color: #767b91;
+}
+#entry__btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  background-color: #2f10f0;
+  color: white;
+  cursor: pointer;
+}
+#entry__btn:hover {
+  background-color: #2508d4;
+}
+
+.list {
+  border-top: 1px solid #eef1f6;
+  margin-top: 2rem;
+}
+.list__header {
+  margin: 2rem 0;
+}
+.list__item {
+  list-style: none;
+  box-shadow: 0px 0px 10px #c7ccdb;
+  border-radius: 0.2rem;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+  display: flex;
+}
+.list__delete {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.list__delete::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: #767b91;
+}
+.list__delete:hover::before {
+  color: #4f546c;
+}
+.list__check {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+.list__checked {
+  opacity: 0.6;
+}
+.list #list__emptystate {
+  text-align: center;
+  display: block;
+  margin: 3rem 0 2rem;
+  color: #767b91;
+}
+.list #list__emptystate h3 {
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
